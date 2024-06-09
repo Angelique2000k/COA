@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .gallery_img {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery_img:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    transition: height 0.5s ease;
+    color: white;
+    display: flex;
+  
+    text-align: left; /* Align text to the left */
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: flex-start;
+}
+
+.gallery_img:hover .overlay {
+    height: 100%;
+}
+
+.overlay .text {
+    bottom: 0;
+    left: 0;
+    
+    padding: 10px;
+    box-sizing: border-box;
+}
+.over {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: flex-start; /* Justify items to the start (left) */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: rgba(255, 255, 255, 0.639);
+}
+
+.conte {
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+</style></head>
+<body>
+    <div class="container my-5" style="justify-content: space-evenly;">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="gallery_img">
+                    <img src="Picture5.jpg" alt="Photo 1" class="img-fluid">
+                    <div class="over">
+                        <div class="conte"><strong><h5>FENNEC <br> FOX</h5>
+                            <p><small>India</small></p></strong></div>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">
+                            <h5>FENNEC <br> FOX</h5>
+                            <p><small>India</small></p>
+
+                            <a href="#">know more ></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="gallery_img">
+                    <img src="Picture6.jpg" alt="Photo 2" class="img-fluid">
+                    <div class="over">
+                        <div class="conte"><strong><h5>HUMPBACK <br> WHALE</h5>
+                            <p><small>south africa</small></p></strong></div>
+                    </div>
+                    <div class="overlay">
+                        <div class="text"><h5>HUMPBACK <br> WHALE</h5>
+                            <p>south africa</p>
+
+                            <a href="#">know more ></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="gallery_img">
+                    <img src="Picture7.jpg" alt="Photo 3" class="img-fluid">
+                    <div class="over">
+                        <div class="conte"><strong><h5>COMMON <br> BABOON</h5>
+                            <p><small>south africa</small></p></strong></div>
+                    </div>
+                    <div class="overlay">
+                        <div class="text"><h5>COMMON <br> BABOON</h5>
+                            <p>south africa</p>
+
+                            <a href="#">know more ></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="gallery_img">
+                    <img src="Picture8.jpg" alt="Photo 3" class="img-fluid">
+                    <div class="over">
+                        <div class="conte"><strong><h5>SPOTTED <br> DEER</h5>
+                            <p><small>amazon</small></p></strong></div>
+                    </div>
+                    <div class="overlay">
+                        <div class="text"><h5>SPOTTED <br> DEER</h5>
+                            <p>amazon</p>
+
+                            <a href="#">know more ></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
